@@ -1,7 +1,9 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import filmList from '@/components/filmList'
 
+Vue.use(Vuex)
 Vue.use(Router)
 
 export default new Router({
@@ -9,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'Hello',
-      component: HelloWorld
+      component: filmList
     }
   ]
 })

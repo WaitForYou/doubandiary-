@@ -30,6 +30,7 @@ export default {
     }
   },
   mounted () {
+    consol.log(1)
   axios.get('/api/movie/in_theaters', { 'city': '广州' })
       .then((result) => {
           console.log(result);
