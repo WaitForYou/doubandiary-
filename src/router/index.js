@@ -6,6 +6,7 @@ import filmList from '@/components/filmList'
 Vue.use(Vuex)
 Vue.use(Router)
 
+
 export default new Router({
   routes: [
     {

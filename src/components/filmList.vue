@@ -1,7 +1,7 @@
 <template>
-  <div class="filmList">
-    <ul v-for="item in movieMsg.subjects">
-      <li>  
+  <div>
+    <ul class="filmList" v-for="item in movie.subjects">
+      <li class="film">  
         fsdafd
       </li>
     </ul>
@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import {movieInTheaters} from '@/store/httpGet';
+import {movieInTheaters} from '@/store/httpGet'
+import { mapState } from 'vuex'
 
 export default {
   name: 'filmList',
@@ -19,12 +20,11 @@ export default {
       movieMsg:{}
     }
   },
+  computed: mapState(
+    ['movie']
+  ),
   mounted () {
-    let that = this;
-    movieInTheaters(function(res){
-      that.movieMsg = res.data;
-      console.log(that.movieMsg)
-    });
+     this.$store.dispatch('LOAD_MOVIE_IN_THEATERS')
   },
 }
 </script>
@@ -47,5 +47,12 @@ li {
 
 a {
   color: #42b983;
+}
+
+.film{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+  background: #fff;
 }
 </style>
