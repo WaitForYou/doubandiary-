@@ -14,6 +14,25 @@ export default {
 <style>
 body{
   margin: 0;
+  background: #e7eaed;
+  box-sizing: border-box
+}
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0;
+}
+
+a {
+  color: #42b983;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -27,5 +46,6 @@ body{
   top:0;
   left:0;
   z-index: -1;
+  width: 100%
 }
 </style>

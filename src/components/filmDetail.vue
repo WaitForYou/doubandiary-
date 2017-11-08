@@ -1,18 +1,6 @@
 <template>
   <div class="filmListWrap">
-    <ul class="filmList" v-for="item in movie.subjects">
-      <li class="film" @click="filmItemClick(item)">  
-        <img class="avater" :src="movie.subjects[0].images.small" />
-        <div class="rightTab">
-          <p><label class="title">{{item.title}}</label></p>
-          <p class="year">{{item.year}}</p>
-          <p class="rating">
-            <label>评分：{{item.rating.average}}</label>
-            <label>赞数：{{item.rating.stars}}</label>
-          </p>
-        </div>
-      </li>
-    </ul>
+      fdsafdsaf
   </div>
 </template>
 

@@ -13,6 +13,10 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: filmList
-    }
+    },
+    // {
+    //   path: '/filmDetail',
+    //   component: filmDetail
+    // }
   ]
 })

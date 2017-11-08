@@ -14,6 +14,7 @@ const store = new Vuex.Store({
 		LOAD_MOVIE_IN_THEATERS: function ({ commit }) {
 		  axios.get(HOST + 'movie/in_theaters', { 'city': '广州' })
 		  .then((response) => {
+		  	  console.log(response.data)
 		      commit('SET_MOVIE_LIST',{ moviesMsg: response.data })
 		  });
 		}
